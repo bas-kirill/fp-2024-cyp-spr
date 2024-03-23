@@ -21,11 +21,6 @@ where
 
 data AgeOnPlanetErr = UnknownPlanet | PlutoNotPlanet deriving (Show, Eq)
 
--- instance Show AgeOnPlanetErr where
---  show :: AgeOnPlanetErr -> String
---  show UnknownPlanet = "Unknown planet"
---  show PlutoNotPlanet = "Pluto not a planet"
-
 type AgeResult = Either AgeOnPlanetErr Float
 
 ageOn :: Integer -> String -> AgeResult
